@@ -1,5 +1,5 @@
 var Hotel = 'flintstones!';
-var userName = prompt('digite seu nome');
+var userName;
 var hospede = [];
 var dias_hospedados;
 var calculo_diaria;
@@ -24,9 +24,7 @@ var totalGarcons;
 var convidados;
 var custoPorGarcom;
 
-alert('Bem vindo ao Hotel ' + Hotel + ' ' + userName + ', é um imenso prazer ter você por aqui!');
-
-inicio();
+login();
 
 function inicio() {
     var escolha = parseInt(prompt('selecione uma opção:\n(1) reservar quarto.\n(2) cadastrar hospedes.\n(3) Consultar hospedes.\n(4) Abastecimento de veiculos.\n(5) Registrar eventos.\n(6)Manutenção do Ar condicionado.\n(7)Sair'));
@@ -383,4 +381,23 @@ function sair() {
     } else {
         cadastrar_hospedes_2();
     }
+}
+
+function login() {
+    alert('Seja bem vindo ao hotel '+ Hotel)
+    userName = prompt('Qual seu nome de usuario: ')
+    var senha = prompt('digite sua senha')
+
+    if (isNaN(senha) || senha === '') {
+        alert('informe um valor valido');
+        login();
+    } else if (senha != '2678') {
+        alert('senha incorreta');
+        login();
+    }else{
+        alert(userName + ', é um imenso prazer ter você por aqui!')
+        inicio();
+    }
+
+
 }
