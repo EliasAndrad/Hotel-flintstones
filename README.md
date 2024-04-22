@@ -1,3 +1,5 @@
+![Captura de tela 2024-04-22 012352](https://github.com/EliasAndrad/Hotel-flintstones/assets/84996872/2b554c04-3ca7-4d2d-bede-18685ac8e459)
+
 Hotel Flintstones
 
 Aplicar e aprimorar habilidades adquiridas ao longo do curso em JavaScript é uma excelente oportunidade, mudando a praticidade e eficiência na gestão interna de um hotel. O sistema foi criado para fornecer uma grande variedade de recursos, desde a reserva de quartos até o monitoramento dos custos de manutenção do ar-condicionado.
